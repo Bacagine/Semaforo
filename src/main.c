@@ -1,5 +1,5 @@
 /**********************************************************************************
- * Git Hub: https://github.com/Bacagine/  *
+ * Git Hub: https://github.com/Bacagine/Semaforo                                  *
  *                                                                                *
  * Copyright (C) 2020                                                             *
  *                                                                                * 
@@ -42,6 +42,7 @@ int main(int argc, char **argv){
     else if(argc == 2){
         setlocale(LC_ALL, "Portuguese");
         if(!strcmp(argv[1], "-h") || !strcmp(argv[1], "--help")){
+            puts(VERSION);
             puts(HELP);
         }
         else if(!strcmp(argv[1], "-v") || !strcmp(argv[1], "--version")){

@@ -1,4 +1,4 @@
-/* Git Hub: https://github.com/Bacagine/
+/* Git Hub: https://github.com/Bacagine/Semaforo
  * 
  * developers.h: Biblioteca com o protótipo da função developers
  * 

@@ -1,11 +1,13 @@
 # Makefile criado por Gustavo Bacagine <gustavo.bacagine@protonmail.com>
 #
-# Data de criação: dd/mm/aaaa
-# Data da última modificação: dd/mm/aaaa 
+# Data de criação: 03/06/2020
+# Data da última modificação: 03/06/2020 
 #
-# Aqui deve vir uma breve esplicação sobre a aplicação
+# Programa criado para a aula de Sistemas Operacionais lecionado
+# pela professora Ana Travasso.
+# Este programa foi criado para poder estudar o uso de semaforos.
 #
-# Git Hub: https://github.com/Bacagine/nome_do_repositorio
+# Git Hub: https://github.com/Bacagine/Semaforo4
 
 TARGET  = semaforo
 SRCDIR  = ./src
@@ -15,10 +17,10 @@ BINDIR  = ./bin
 SRC     = $(wildcard $(SRCDIR)/*.c)
 INC     = -I $(INCDIR)
 OBJ     = $(addprefix $(OBJDIR)/,main.o semaforo.o developers.o)
-BIN     = $(OBJDIR)/$(TARGET)
+BIN     = $(BINDIR)/$(TARGET)
 RM      = rm -rf
 CC      = gcc
-CFLAGS  = -W -Wall -g -lm -lncurses
+#CFLAGS  = -W -Wall -g -lm -lncurses
 
 all: $(OBJDIR) $(BINDIR) $(BIN)
 
