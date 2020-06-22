@@ -41,14 +41,15 @@ void semaforo(void){
     
     pid = fork();
     
-    while(1){
-        if(pid == 1){
-            printf("Eu sou o processo pai\nMeu ID e: %d", getpid());
-        }
-        else{
-            printf("Eu sou o processo filho\nMeu ID e: %d", getpid());
-        }
+//    while(1){
+    if(pid > 0){
+        pid = fork();
+        printf("Eu sou o processo pai\nMeu ID e: %d", getpid());
     }
+    else{
+        printf("Eu sou o processo filho\nMeu ID e: %d", getpid());
+    }
+//    }
     
 //    printf("Inicio da execução do processo %d, semaforo %d\n", pid, semid);
 }
