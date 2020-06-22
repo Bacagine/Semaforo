@@ -44,7 +44,6 @@ int main(int argc, char **argv){
         
         while(1){
             if(pid > 0){
-                pid = fork();
                 printf("Eu sou o processo pai, meu ID e: %d\n", getpid());
                 sleep(2);
             }

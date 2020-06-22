@@ -34,7 +34,7 @@
 #include <stdlib.h>
 #include <../include/semaforo.h>
 //#include "../include/fatec.h"
-
+/*
 void semaforo(void){
 //  int semid;
     pid_t pid;
@@ -56,3 +56,4 @@ void semaforo(void){
     
 //    printf("Inicio da execução do processo %d, semaforo %d\n", pid, semid);
 }
+*/
