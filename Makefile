@@ -7,7 +7,7 @@
 # pela professora Ana Travasso.
 # Este programa foi criado para poder estudar o uso de semaforos.
 #
-# Git Hub: https://github.com/Bacagine/Semaforo4
+# Git Hub: https://github.com/Bacagine/Semaforo
 
 TARGET  = semaforo
 SRCDIR  = ./src

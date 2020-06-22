@@ -34,7 +34,7 @@
 #include <unistd.h>
 
 // Versão da aplicação
-#define VERSION "semaforo 20.06.16 (amd64)"
+#define VERSION "semaforo 20.06.22v6 (amd64)"
 
 /* Mensagem de ajuda
  * para o usuário */
