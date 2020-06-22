@@ -34,6 +34,7 @@
 #include <locale.h>
 #include <string.h>
 #include "../include/semaforo.h"
+#include "../include/developers.h"
 
 int main(int argc, char **argv){
     if(argc == 1){

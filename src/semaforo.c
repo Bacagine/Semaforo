@@ -32,14 +32,23 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <../include/semaforo.h>
 //#include "../include/fatec.h"
 
 void semaforo(void){
-    //
-    int semid;
-    //
-    int pid, pid_father, pid_son;
+//  int semid;
+    pid_t pid/*, pid_father, pid_son*/;
     
+    pid = fork();
     
-    printf("Inicio da execução do processo %d, semaforo %d\n", pid, semid);
+    while(1){
+        if(pid == 1){
+            printf("Eu sou o processo pai\nMeu ID e: %d", getpid());
+        }
+        else{
+            printf("Eu sou o processo filho\nMeu ID e: %d", getpid());
+        }
+    }
+    
+//    printf("Inicio da execução do processo %d, semaforo %d\n", pid, semid);
 }

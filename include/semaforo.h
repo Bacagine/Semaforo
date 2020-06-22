@@ -28,19 +28,19 @@
 
 #include <stdlib.h>
 #include <errno.h>
-#include <sys/types.h>
+#include <semaphore.h>
 #include <sys/ipc.h>
 #include <sys/sem.h>
 #include <unistd.h>
 
 // Versão da aplicação
-#define VERSION "semaforo 20.06.03 (amd64)"
+#define VERSION "semaforo 20.06.16 (amd64)"
 
 /* Mensagem de ajuda
  * para o usuário */
 #define HELP "Usage: semaforo [option]\n\
 \nPrograma criado para a aula de Sistemas Operacionais lecionado\n\
-pela professora Ana Travasso.\n\
+pela professora Ana Travassos.\n\
 Este programa foi criado para poder estudar o uso de semaforos.\n\
 \n\
 Argumentos:\n\
@@ -57,6 +57,6 @@ void semaforo(void);
 
 /* Mostra os Desenvolvedores
  * do programa */
-void developers(void);
+//void developers(void);
 
 #endif
