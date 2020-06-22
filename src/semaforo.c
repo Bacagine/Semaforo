@@ -37,7 +37,7 @@
 
 void semaforo(void){
 //  int semid;
-    pid_t pid/*, pid_father, pid_son*/;
+    pid_t pid;
     
     pid = fork();
     
@@ -45,9 +45,12 @@ void semaforo(void){
         if(pid > 0){
             pid = fork();
             printf("Eu sou o processo pai, meu ID e: %d\n", getpid());
+            sleep(2);
         }
         else{
+            pid = fork();
             printf("Eu sou o processo filho, meu ID e: %d\n", getpid());
+            sleep(2);
         }
     }
     

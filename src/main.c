@@ -38,7 +38,22 @@
 
 int main(int argc, char **argv){
     if(argc == 1){
-        semaforo();
+        pid_t pid;
+        
+        pid = fork();
+        
+        while(1){
+            if(pid > 0){
+                pid = fork();
+                printf("Eu sou o processo pai, meu ID e: %d\n", getpid());
+                sleep(2);
+            }
+            else{
+                printf("Eu sou o processo filho, meu ID e: %d\n", getpid());
+                sleep(2);
+            }
+        }
+        //semaforo();
     }
     else if(argc == 2){
         setlocale(LC_ALL, "Portuguese");
