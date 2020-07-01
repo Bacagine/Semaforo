@@ -34,7 +34,7 @@
 #include <unistd.h>
 
 // Versão da aplicação
-#define VERSION "semaforo 20.06.22v6 (amd64)"
+#define VERSION "semaforo 20.07.01 (amd64)"
 
 /* Mensagem de ajuda
  * para o usuário */
@@ -49,14 +49,5 @@ Argumentos:\n\
 
 // Licença da aplicação
 #define LICENSE "../LICENSE"
-
-extern errno;
-
-/*  */
-void semaforo(void);
-
-/* Mostra os Desenvolvedores
- * do programa */
-//void developers(void);
 
 #endif

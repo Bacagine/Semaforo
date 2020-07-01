@@ -16,7 +16,7 @@ OBJDIR  = ./obj
 BINDIR  = ./bin
 SRC     = $(wildcard $(SRCDIR)/*.c)
 INC     = -I $(INCDIR)
-OBJ     = $(addprefix $(OBJDIR)/,main.o semaforo.o developers.o)
+OBJ     = $(addprefix $(OBJDIR)/,main.o developers.o)
 BIN     = $(BINDIR)/$(TARGET)
 RM      = rm -rf
 CC      = gcc
@@ -32,8 +32,6 @@ $(BINDIR):
 $(BIN): $(OBJ)
 	$(CC) -o $@ $(OBJ) $(CFLAGS)
 $(OBJDIR)/main.o: $(SRCDIR)/main.c
-	$(CC) -c $< $(INC) -o $@ $(CFLAGS)
-$(OBJDIR)/semaforo.o: $(SRCDIR)/semaforo.c $(INCDIR)/semaforo.h
 	$(CC) -c $< $(INC) -o $@ $(CFLAGS)
 $(OBJDIR)/developers.o: $(SRCDIR)/developers.c $(INCDIR)/developers.h
 	$(CC) -c $< $(INC) -o $@ $(CFLAGS)

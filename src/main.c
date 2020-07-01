@@ -69,6 +69,7 @@ int main(int argc, char **argv){
     else{
         setlocale(LC_ALL, "Portuguese");
         fprintf(stderr, "Erro! Você digitou mais de um argumento\n");
+		return 1;
     }
     return 0;
 }
