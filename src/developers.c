@@ -38,19 +38,18 @@
 void developers(void){
     setlocale(LC_ALL, "Portuguese");
     
-    fprintf(stdout, "*************************DESENVOLVEDORES*************************\n");    
-    fprintf(stdout, "*                                                               *\n");
-    fprintf(stdout, "* FATEC        -          Carapicuíba            -         2020 *\n");
-    fprintf(stdout, "*---------------------------------------------------------------*\n");
-    fprintf(stdout, "*                                                               *\n");
-    fprintf(stdout, "* Gustavo Bacagine          <gustavo.bacagine@protonmail.com>   *\n");
-    fprintf(stdout, "* Caio Elias Emerick Regino <caioregino.147@gmail.com>          *\n");
-    fprintf(stdout, "* José Eduardo              <joseeduardoolimpio@gmail.com>      *\n");
-    fprintf(stdout, "*                                                               *\n");
-    fprintf(stdout, "* covid19 é uma aplicação que recebe e processa informações a   *\n");
-    fprintf(stdout, "* respeito do numero de contagios por Covid-19 em um conjunto   *\n");
-    fprintf(stdout, "* de paises num determinado periodo de tempo.                   *\n");
-    fprintf(stdout, "*                                                               *\n");
-    fprintf(stdout, "*****************************************************************\n");
+    fprintf(stdout, "*************************DESENVOLVEDORES**************************\n");    
+    fprintf(stdout, "*                                                                *\n");
+    fprintf(stdout, "* FATEC        -          Carapicuíba            -         2020  *\n");
+    fprintf(stdout, "*----------------------------------------------------------------*\n");
+    fprintf(stdout, "*                                                                *\n");
+    fprintf(stdout, "* Gustavo Bacagine          <gustavo.bacagine@protonmail.com>    *\n");
+    fprintf(stdout, "* Caio Elias Emerick Regino <caioregino.147@gmail.com>           *\n");
+    fprintf(stdout, "* José Eduardo              <joseeduardoolimpio@gmail.com>       *\n");
+    fprintf(stdout, "*                                                                *\n");
+    fprintf(stdout, "* O programa semaforo foi criado para a aula de Sistemas         *\n");
+    fprintf(stdout, "* Operacionais lecionado pela professora Ana Travassos.          *\n");
+    fprintf(stdout, "* Este programa foi feito para poder estudar o uso de semaforos. *\n");
+    fprintf(stdout, "*                                                                *\n");
+    fprintf(stdout, "******************************************************************\n");
 }
-
